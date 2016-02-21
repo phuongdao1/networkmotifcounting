@@ -40,6 +40,8 @@ First parameter is the file containing all tree topoligies, followed by the id o
 <a name="papers"></a>
 ## CITATIONS
 
+Please cite the following papers:
+
 1. Noga Alon, Phuong Dao, Iman Hajirasouliha, Fereydoun Hormozdiari, S. Cenk Sahinalp. "Biomolecular Network Motif Counting and Discovery by Color Coding". Bioinformatics (2008) 24 (13): i241-i249. [[LINK]](http://bioinformatics.oxfordjournals.org/content/24/13/i241.full)
 2. Phuong Dao, Alexander Schonhuth, Fereydoun Hormozdiari, Iman Hajirasouliha, S. Cenk Sahinalp and Martin Ester. "Quantifying Systemic Evolutionary Changes by Color Coding Condence-Scored PPI Networks". Proceedings of the 9th Workshop on Algorithms on Bioinformatics (WABI 2009). [[LINK]](http://link.springer.com/chapter/10.1007%2F978-3-642-04241-6_4)
 
@@ -50,4 +52,3 @@ Please report any problems directly to the github issue tracker. Also, you can a
 ## LICENSE
 
 Network Motif Counting is distributed under GNU GPL license version 3.
-
