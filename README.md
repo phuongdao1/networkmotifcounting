@@ -1,43 +1,32 @@
-# Network Motif Counting
+# NETWORK MOTIF COUNTING
 
-# NETWORK FILE (exampleNetwork):
-
-the first line contain # vertices and # edges
-following by the edges together with their confidence score (should be between 0 and 1)
-vertex ids start from 0
-
-# TREE TOPOLOGY FILE 
-
-6trees containing all tree topologies of size 6 
-7trees...
-
-the first number in each file is the size of all the trees in this file
-following by all the undirected unlabelled trees of that size
-
-the format of the tree topology as following:
-
-0 1 2 3 1 5
-
-the vertex with id 2 connects to vertex with id 1
-the vertex with id 3 connects to vertex with id 2
-the vertex with id 4 connects to vertex with id 3
-the vertex with id 5 connects to vertex with id 1
-the vertex with id 6 connects to vertex with id 5
-
-and this corresponds to a path
-
-# HOW TO COMPILE:
+## COMPILATION:
 
 g++ NetworkMotifCount.cpp -o NetworkMotifCount
 
 change to long double if the number of trees is large but notice that it only works on 64 bit machine.
 
-# HOW TO RUN:
+## INPUT FILES
+### Network File Format 
+
+We include a sample network file ExampleNetwork. The first line contains the number of vertices and edges following by the edges together with their confidence score (should be between 0 and 1). All vertex ids start from 0.
+
+### Tree Topology File Format 
+
+Here we enclose all undirected unlabelled tree topologies with 6,7,8 and 9 vertices.
+
+6trees containing all tree topologies of size 6 
+7trees containing all tree topologies of size 7
+...
+
+The first number in each file is the number of vertices that all the trees in this file contain. Each line following describe a topology of a tree. The format of the tree topology is described through this following example:
+
+0 1 2 3 1 5
+
+There is an edge between vertex 1 and 2, vertex 2 and 3, vertex 3 and 4, vertex 1 and 5, vertex 5 and 6. This is a simple path 6-5-1-2-3-4
+
+## USAGE
 
 ./NetworkMotifCount 6trees 1 ExampleNetwork
 
-the first parameter is the file containing all tree topoligies
-the second parameter is the id of the tree we would like to count
-the third parameter is the name of the network
-
-
+First parameter is the file containing all tree topoligies, followed by the id of the tree we would like to count and the file describing the network topology.
