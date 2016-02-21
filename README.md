@@ -1,7 +1,7 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 # NETWORK MOTIF COUNTING
 
-Network motif counting is a tool for counting the number of occurrences of a given undirected tree in a undirected network. The edges in the network could be have weights in $[0,1]$. It implements a randomized algorithm that are described in our [papers].
+Network motif counting is a tool for counting the number of occurrences of a given undirected tree in a undirected network. The edges in the network could be have weights in [0,1]. It implements a randomized algorithm that are described in our [papers](#papers).
 
 ## COMPILATION
 
@@ -38,7 +38,7 @@ There is an edge between vertex 1 and 2, vertex 2 and 3, vertex 3 and 4, vertex 
 
 First parameter is the file containing all tree topoligies, followed by the id of the tree we would like to count and the file describing the network topology.
 
-[papers]:
+(#papers)
 ## CITATIONS
 
 1. Noga Alon, Phuong Dao, Iman Hajirasouliha, Fereydoun Hormozdiari, S. Cenk Sahinalp. "Biomolecular Network Motif Counting and Discovery by Color Coding". Bioinformatics (2008) 24 (13): i241-i249. [link](http://bioinformatics.oxfordjournals.org/content/24/13/i241.full)
