@@ -1155,7 +1155,7 @@ int main(int argc, char *argv[])
     sprintf(resultFile,"%s_%d_%d",argv[3],m,treeId);
     twoToPowerm=(int)pow(2.0,m*1.0);
     delta=0.01;
-    eps=0.1;
+    eps=0.01;
     createTree(&t,m);
 
     //cout<<"xxx "<<m<<" "<<treeId<<endl;
