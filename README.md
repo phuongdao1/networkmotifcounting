@@ -1,10 +1,12 @@
 # NETWORK MOTIF COUNTING
 
-## COMPILATION:
+## COMPILATION
 
+```
 g++ NetworkMotifCount.cpp -o NetworkMotifCount
+```
 
-change to long double if the number of trees is large but notice that it only works on 64 bit machine.
+If the number of trees is large, you change the type to ```long double```. However, it only works on 64 bit machine.
 
 ## INPUT FILES
 ### Network File Format 
@@ -13,7 +15,7 @@ We include a sample network file ExampleNetwork. The first line contains the num
 
 ### Tree Topology File Format 
 
-Here we enclose all undirected unlabelled tree topologies with 6,7,8 and 9 vertices.
+Here we enclose all undirected unlabelled tree topologies with 6,7,8,9 and 10 vertices.
 
 6trees containing all tree topologies of size 6 
 7trees containing all tree topologies of size 7
@@ -27,6 +29,16 @@ There is an edge between vertex 1 and 2, vertex 2 and 3, vertex 3 and 4, vertex 
 
 ## USAGE
 
+```
 ./NetworkMotifCount 6trees 1 ExampleNetwork
+```
 
 First parameter is the file containing all tree topoligies, followed by the id of the tree we would like to count and the file describing the network topology.
+
+## CITATIONS
+
+1. Noga Alon, Phuong Dao, Iman Hajirasouliha, Fereydoun Hormozdiari, S. Cenk Sahinalp. "Biomolecular Network Motif Counting and Discovery by Color Coding". Bioinformatics (2008) 24 (13): i241-i249.
+2. Phuong Dao, Alexander Schonhuth, Fereydoun Hormozdiari, Iman Hajirasouliha, S. Cenk Sahinalp and Martin Ester. "Quantifying Systemic Evolutionary Changes by Color Coding Condence-Scored PPI Networks". Proceedings of the 9th Workshop on Algorithms on Bioinformatics (WABI 2009).
+
+## LICENSE
+
